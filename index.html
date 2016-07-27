@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon Says</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <!------------------------------------------
+              Board Intro
+------------------------------------------>
+<div class="intro">
+  <div class="row text-center intro-content">
+    <h1 class='game'>Simon Says</h1>
+    <button class='btn' id='start'>Start</button>
+    <button class='btn' id='strict'>Strict Mode</button>
+  </div>
+</div>
+<!------------------------------------------
+              Board
+------------------------------------------>
+<div class="container">
+  <button id='green' class='.col-xs-4'></button>
+<button id='blue' class='.col-xs-4'></button>
+  <button id='yellow' class='.col-xs-4'></button>
+<button id='red' class='.col-xs-4'></button>
+  <div class='row text center' id="center">
+  <button id='reset' class='btn .col-xs-4'>Reset</button>
+  <h2 class='.col-xs-4' id='count'>--</h2>
+    </div>
+</div>
+<!------------------------------------------
+              Board Ending
+------------------------------------------>
+<div class="ending">
+  <div class="row text-center end-content">
+    <h1 class='winner'>You won!</h1>
+    <span id='ending'>Play again?</span>
+  </div>
+</div>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

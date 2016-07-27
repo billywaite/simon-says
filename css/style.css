@@ -1,0 +1,188 @@
+@import 'https://fonts.googleapis.com/css?family=Bungee+Shade';
+
+body {
+  margin: 50px auto;
+  font-family: 'Bungee Shade', cursive;
+  background-color: #000044;
+}
+/*****************************
+    Intro Screen
+*****************************/
+.intro {
+    display: block; 
+    position: fixed;
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.7); 
+}
+
+.intro-content {
+    background-color: #E0CC97;
+    color: #4D8963;
+    margin: 12% auto; 
+    padding: 10px;
+    border: 1px solid #888;
+    width: 300px;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16), 2px 3px 1px rgba(0, 0, 0, 0.23);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16), 2px 3px 1px rgba(0, 0, 0, 0.23);
+}
+.game {
+  font-size: 45px;
+  padding-bottom: 10px;
+}
+.intro button {
+  background-color: #EC799A;
+  margin: 5px;
+  font-size: 25px;
+  transition-duration: 0.4s;
+}
+.intro button:hover {
+  background-color: #4D8963;
+  color: #EC799A;
+}
+/******************************
+      Main Board
+****************************/
+.container {
+ position: relative;
+  width: 375px;
+  height: 375px;
+  border-style: none;
+}
+button{
+  border-style: none;
+  outline: none;
+  border: 3px solid whitesmoke;
+  transition-duration: 0.4s;
+}
+
+#green {
+  position: relative;
+  display: inline-block;
+  height: 175px;
+  width: 170px;
+  background-color: #31A166;
+  border-top-left-radius: 100%;
+}
+#green:hover {
+  background-color: green;
+}
+
+#blue {
+   height: 175px;
+    width: 170px;
+  background-color: #2199CD;
+  position: relative;
+  display: inline-block;
+  border-top-right-radius: 100%;
+}
+#blue:hover {
+  background-color: blue;
+}
+#yellow {
+    height: 175px;
+    width: 170px;
+  background-color: #FFCB00;
+  position: relative;
+  display: inline-block;
+  border-bottom-left-radius: 100%;
+}
+#yellow:hover {
+  background-color: yellow;
+}
+#red {
+    height: 175px;
+    width: 170px;
+  background-color: #D14838;
+  position: relative;
+  display: inline-block;
+  border-bottom-right-radius: 100%;
+}
+#red:hover {
+  background-color: red;
+}
+#center {
+  position:absolute;
+  text-align: center;
+  z-index: 5;
+  height: 125px;
+    width: 125px;
+    top: 120px;
+  left: 145px;
+  border-radius: 100%;
+  background-color: #E0CC97;
+}
+#reset {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  background-color: #EC799A;
+  color: #4D8963;
+  text-align: center;
+  border-radius: 8px;
+  height: 30%; width: 60%;
+  transition-duration: 0.4s;
+}
+#reset:hover {
+  background-color: #4D8963;
+  color: #EC799A;
+}
+#count {
+  margin: auto;
+  background-color: white;
+  color: #F20075;
+  height: 27%; width: 40%;
+  border-radius: 3px;
+}
+/*****************************
+    End game
+*****************************/
+.ending {
+    display: none; 
+    position: fixed;
+    z-index: 2; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.7); 
+}
+
+.end-content {
+    background-color: #E0CC97;
+    color: #4D8963;
+    margin: 12% auto; 
+    padding: 10px;
+    border: 1px solid #888;
+    width: 100vh;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16), 2px 3px 1px rgba(0, 0, 0, 0.23);
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.16), 2px 3px 1px rgba(0, 0, 0, 0.23);
+}
+.ending span {
+  background-color: #EC799A;
+  padding: 7px;
+  margin: 5px;
+  font-size: 25px;
+  outline: none;
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.ending span:hover {
+  background-color: #4D8963;
+  color: #EC799A;
+}
+.winner {
+  font-size: 55px;
+  padding-bottom: 10px;
+}
+
